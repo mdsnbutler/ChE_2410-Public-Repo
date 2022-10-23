@@ -1,9 +1,13 @@
 # ChE 2410 Project 1 - COVID Factors: How transportation usage and population density affect covid infection rates.
 
-Analyzing 2021 COVID cases by county, looking for a relationship to public transportation
+Abstract: in 2021 Americans slowly started using public transportation again after the dropoff during the early COVID period. Given apparent shared space occuring in public transportation, was the rate of public transportation usage a factor in COVID case rates in 2021? This data analysis looks into answering this question using existing public datasets to generate vizualizations of what relationships may exist between different measurements of American counties. 
 
-With or without a relationship to public transportation, was population density an interactive factor in these data? Put another way, is any relationship with public transportation usage just measuring for a measure of city-ness.
+No significant relationship was found between whether a county had significant public transportation usage and their according case count in 2021. Future observations should look into more specific slices such as particular metropolitan areas or specific time periods.
 
-Practicing data vizualization & large-datasets manipulation via pandas & python
+![My Image](casesperpophist.png)
 
-To-do: export final graphs to github & readme, start powerpoint of final presentation, write out justifications for usage of data, test data (randomly sample 5 different counties and see if data matches across databases), if time make t-test hover program (mouse position determines x and y position on graph, determines p value of being greater than the x and y positions), pull up data on allegheny county to make conclusion relate back to motivations from beginning, make graph of transportation/density vs infections to justify linear and non-linear regression
+This is a histogram of total cases per capita. Further outliers are omitted with even higher total case counts. Total cases per capita is across a year, corresponding average cases per capita would be the total divided by number of reported cases, 365.
+
+![My Image](cases_vs_logptu_densitycolored.png)
+
+Log10 of public transportation usage versus cases per capita, one dot is a county. Colored based on log10 of population density.
